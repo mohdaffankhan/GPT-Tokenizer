@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GPT Tokenizer
 
-## Getting Started
+A simple, colorful, real-time tokenizer built with **Next.js** and the [`gpt-tokenizer`](https://www.npmjs.com/package/gpt-tokenizer) package.
+It visualizes how GPT models break down your text into tokens and lets you reverse tokens back into text.
 
-First, run the development server:
+## ✨ Features
+
+* **Token details** – View both the text and token ID.
+* **Color-coded tokens** – Each token gets a unique color for clarity.
+* **Click-to-copy** – Copy individual token IDs.
+* **Copy all** – Copy all tokens at once.
+* **Reverse tokenization** – Convert token IDs back into text.
+
+## 🚀 Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/mohdaffankhan/GPT-Tokenizer.git
+
+# Navigate into the project folder
+cd GPT-Tokenizer
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Type or paste your text into the input box.
+2. Tokens will appear below, each with its token ID.
+3. Click a token to copy its ID, or use **Copy All Tokens** to copy them all.
+4. Use the reverse section to paste token IDs and get the original text.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack
 
-## Learn More
+* **Next.js** – Frontend framework
+* **React** – UI library
+* **Tailwind CSS** – Styling
+* **gpt-tokenizer** – GPT-compatible tokenizer
 
-To learn more about Next.js, take a look at the following resources:
+## 📷 Preview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![GPT Tokenizer Preview](./public/preview.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 License
 
-## Deploy on Vercel
+MIT License. Feel free to use and modify.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
