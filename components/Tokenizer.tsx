@@ -19,6 +19,12 @@
     const [text, setText] = useState('');
     const tokens = encode(text);
 
+    const copyAllTokens = () => {
+    if (tokens.length > 0) {
+      navigator.clipboard.writeText(tokens.join(' '));
+    }
+  };
+  
     return (
         <div className="font-sans p-6 bg-white rounded-lg shadow-sm h-screen">
         <div className="mb-6">
@@ -41,9 +47,17 @@
             Token count: <span className="font-semibold text-blue-600">{tokens.length}</span>
             </p>
             {tokens.length > 0 && (
+            <div className="flex items-center gap-3">
             <p className="text-xs text-gray-500">
                 Click on tokens to copy their IDs
             </p>
+            <button
+              onClick={copyAllTokens}
+              className="text-xs bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-md transition cursor-pointer"
+            >
+              Copy All Tokens
+            </button>
+            </div>
             )}
         </div>
 
